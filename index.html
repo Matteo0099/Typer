@@ -1,50 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Speed Typing Game</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+    <meta name="description" content="A type racer. You can test your type skills!"/>
+    <title>Type Racer</title>
+    <link rel="stylesheet" href="./assets/style.css">
+    <script src="./src/script.js" defer></script>
+    <!--icons-->
+    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css" class="css">
 </head>
+
 <body>
-    <div class="wrapper">
-        <input type="text" class="input-field">
-        <div class="content-box">
-            <div class="typing-text">
-                <p id="paragraph"></p>
+    <div class="hero__section">
+        <div class="wrapper">
+            <div class="header">
+                <h1 class="title__hero">
+                    TYPE RACE
+                </h1>
             </div>
-            <div class="content">
-                <ul class="result-details">
-                    <li class="time">
-                        <p>
-                            Time Left:
-                        </p>
-                        <span><b>60</b>s</span>
+            <input type="text" class="input-field">
+            <div class="content-box">
+                <div class="typing-text">
+                    <p id="paragraph"></p>
+                </div>
+                <div class="center btn">
+                    <button class="try-again">
+                        Try Again
+                    </button>
+                </div>
+                <div class="content">
+                    <ul class="result-details">
+                        <li class="time">
+                            <p>
+                                Time Left:
+                            </p>
+                            <span><b>60</b>s</span>
+                        </li>
+                        <li class="mistake">
+                            <p>
+                                Mistakes:
+                            </p>
+                            <span>0</span>
+                        </li>
+                        <li class="wpm">
+                            <p>
+                                WPM:
+                            </p>
+                            <span>0</span>
+                        </li>
+                        <!--<li class="cpm">
+                            <p>
+                                CPM:
+                            </p>
+                            <span>0</span>
+                        </li>-->
+                    </ul>
+                </div>
+            </div>
+            <div class="social">
+                <ul>
+                    <li>
+                        <a href="https://github.com/Matteo0099" target="_blank">  
+                            <i class="bi bi-github"></i>
+                        </a>
                     </li>
-                    <li class="mistake">
-                        <p>
-                            Mistakes:
-                        </p>
-                        <span>0</span>
+                    <li>
+                        <a href="https://www.instagram.com/itz_matteomania/" target="_blank">
+                            <i class="bi bi-instagram"></i>
+                        </a>
                     </li>
-                    <li class="wpm">
-                        <p>
-                            WPM:
-                        </p>
-                        <span>0</span>
-                    </li>
-                    <li class="cpm">
-                        <p>
-                            CPM:
-                        </p>
-                        <span>0</span>
+                    <li>
+                        <a href="mailto:matteomania09@gmail.com" target="_blank">
+                            <i class="bi bi-envelope"></i>
+                        </a>
                     </li>
                 </ul>
-                <button>Try Again</button>
             </div>
         </div>
     </div>
 </body>
+
 </html>
