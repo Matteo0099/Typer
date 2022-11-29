@@ -18,13 +18,16 @@ body {
     justify-content: center;
     flex-direction: column;
     min-height: 100vh;
-    background: linear-gradient(hsl(204, 100%, 35%),
-            hsl(196, 93%, 70%),
-            hsl(0, 0%, 100%));
+    background: linear-gradient(hsl(204, 100%, 40%),
+            hsl(196, 93%, 55%),
+            hsl(0, 0%, 88%));
 }
 
 #paragraph {
     color: #646669;
+    user-select: none;
+        -moz-user-select: none;
+            -moz-user-select: none;
 }
 
 .result-details {
@@ -163,6 +166,7 @@ body {
 .center.btn {
     margin: auto;
     padding-top: 1rem;
+    padding-bottom: 1.25rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -259,11 +263,6 @@ button.try-again:hover {
 .result-details li *:not(.wpm p, .wpm span) {
     font-size: 15px;
 }
-
-/* .result-details li:not(:first-child) {
-    padding-left: 40px;
-    border-left: 2px solid #bfbfbf;
-} */
 
 .result-details li span {
     display: block;
@@ -372,8 +371,8 @@ li:not(:first-child) span {
     color: #deddd9;
     outline: 2px solid #deddd9;
     padding: .5rem 1rem;
-    font-size: 1.85em;
-    border-radius: 50%;
+    font-size: 1.75em;
+    border-radius: 51%;
     transition: all .3s ease-in-out;
 }
 

@@ -1,3 +1,4 @@
+//paragraph totally random 
 const paragraphs = [
     "Their politician was, in this moment, a notour paperback. The first armless grouse is, in its own way, a gear. The coat is a wash. However, a cake is the llama of a caravan. Snakelike armies show us how playgrounds can be viscoses. Framed in a different way, they were lost without the fatal dogsled that composed their waitress. Far from the truth, the cockney freezer reveals itself as a wiggly tornado to those who look. The first hawklike sack.",
     "Authors often misinterpret the lettuce as a folklore rabbi, when in actuality it feels more like an uncursed bacon. Pursued distances show us how mother-in-laws can be charleses. Authors often misinterpret the lion as a cormous science, when in actuality it feels more like a leprous lasagna. Recent controversy aside, their band was, in this moment, a racemed suit. The clutch of a joke becomes a togaed chair. The first pickled chess is.",
@@ -72,6 +73,7 @@ function initTyping() {
             }
             charIndex++;
         }
+
         characters.forEach(span => span.classList.remove("active"));
         characters[charIndex].classList.add("active");
 
@@ -81,6 +83,7 @@ function initTyping() {
         wpmTag.innerText = wpm;
         mistakeTag.innerText = mistakes;
         //cpmTag.innerText = charIndex - mistakes;
+
     } else {
         clearInterval(timer);
         inpField.value = "";
@@ -98,6 +101,7 @@ function initTimer() {
     }
 }
 
+//genera un nuovo paragrafo al reset / refresh
 function resetGame() {
     loadParagraph();
     clearInterval(timer);
