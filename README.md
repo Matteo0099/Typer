@@ -3,5 +3,7 @@
 
 **Typer-Race** 
 
-# Typing-Speed-Game with JavaScript
+# Typing and test your speed...
 >You can test your type's skills!
+
+@MIT LICENSE 2022
