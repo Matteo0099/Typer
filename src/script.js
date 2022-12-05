@@ -48,9 +48,11 @@ function loadParagraph() {
 }
 
 function initTyping() {
+    var i = 0;
     let characters = typingText.querySelectorAll("span");
     let typedChar = inpField.value.split("")[charIndex];
     if (charIndex < characters.length - 1 && timeLeft > 0) {
+        typingText.querySelectorAll("span")[i++].classList.add("active");
         if (!isTyping) {
             timer = setInterval(initTimer, 1000);
             isTyping = true;
@@ -72,6 +74,11 @@ function initTyping() {
             }
             charIndex++;
             console.log(charIndex);
+
+            //typingText.querySelectorAll("span")[i++].classList.add("active");
+            if (typingText.className != "active") {
+                typingText.querySelectorAll("span")[i++].classList.add("active");
+            }
         }
 
         characters.forEach(span => span.classList.remove("active"));
