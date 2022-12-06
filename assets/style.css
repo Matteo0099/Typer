@@ -193,7 +193,7 @@ body {
     }
 }
 
-.typing-text p span {
+.typing-text p span.active:before {
     width: 3px;
     bottom: 0;
     left: -1px;
