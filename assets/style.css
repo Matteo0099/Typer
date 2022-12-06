@@ -145,12 +145,8 @@ body {
     max-height: 400px
 }
 
-<<<<<<< Updated upstream
-.content-box,
-.typing-text {
-=======
+
 .content-box, .typing-text {
->>>>>>> Stashed changes
     font-family: 'Roboto Mono', monospace
 }
 
@@ -182,7 +178,6 @@ body {
     position: absolute;
     content: "";
     height: 30px;
-<<<<<<< Updated upstream
     width: 1px;
     bottom: 0;
     left: 0;
@@ -197,7 +192,8 @@ body {
         opacity: 1
     }
 }
-=======
+
+.typing-text p span {
     width: 3px;
     bottom: 0;
     left: -1px;
@@ -213,13 +209,6 @@ body {
         opacity: 1;
     }
 }
-
-/* @keyframes blink {
-    50% {
-        opacity: 1
-    }
-} */
->>>>>>> Stashed changes
 
 .center.btn {
     margin: auto;
@@ -378,12 +367,8 @@ li:not(:first-child) span {
         padding: 0
     }
 
-<<<<<<< Updated upstream
-    .result-details li p,
-    .result-details li span {
-=======
+
     .result-details li p, .result-details li span {
->>>>>>> Stashed changes
         font-size: 15px
     }
 }
@@ -451,8 +436,4 @@ li:not(:first-child) span {
 .social ul li a:active svg {
     transform: scale(1.1);
     transform: translateY(2.5px)
-<<<<<<< Updated upstream
 }
-=======
-}
->>>>>>> Stashed changes
